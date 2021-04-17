@@ -1,0 +1,36 @@
+.main-nav{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	.link-about{
+		font-size: 16px;
+		line-height: 19px;
+		color: $dark-grey;
+		font-weight: 300;
+	}
+
+	.link{
+		font-weight: 700;
+		color: $dark-blue;
+		margin: 0 0 0 108px;
+
+		@media (max-width: 1023px){
+			margin: 0 0 0 30px;
+		}
+
+		@media (max-width: 767px){
+			margin: 0;
+			color: $orange;
+			font-size: 14px;
+		}
+
+		@media (max-width: 375px){
+			font-size: 12px;
+		}
+
+		.decor{
+			margin: 0 0 0 5px;
+		}
+	}
+}

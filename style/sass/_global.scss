@@ -1,0 +1,164 @@
+body{
+	padding: 0;
+	margin: 0;
+	// opacity: 1!important;
+	@include transition(opacity, 0.5s);
+	font-family: $base-font-family;
+	overflow-x: hidden;
+	color: $dark-grey;
+}
+
+
+.container{
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@media (max-width: 767px){
+		padding: 0 20px;
+	}
+}
+
+p{
+	font-size: $base-font-size;
+	line-height: 22px;
+	margin: 0 0 22px;
+}
+
+*{
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, a, img, ul, li{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+strong{
+	color: $dark-grey;
+}
+
+h1.title-big{
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 52px;
+	color: $dark-grey;
+	margin: 0 0 20px;
+
+	@media (max-width: 767px){
+		font-size: 32px;
+		line-height: 27px;
+	}
+}
+
+h2.title-middle{
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 700;
+	margin: 0 0 20px;
+
+	@media (max-width: 767px){
+		font-size: 28px;
+		line-height: 30px;
+	}
+
+	&_white{
+		color: $white;
+	}
+}
+
+h3.title-small{
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: $white;
+}
+
+svg{
+	vertical-align: middle;
+}
+
+
+header, section, footer{
+	width: 100%;
+	min-width: $width-min;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+textarea,
+button,
+input{
+	&::-webkit-input-placeholder {color:inherit;}
+	&::-moz-placeholder          {color:inherit;}
+	&:-moz-placeholder           {color:inherit;}
+	&:-ms-input-placeholder      {color:inherit;}
+	position: relative;
+	box-sizing: border-box;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	border-radius: 0;
+}
+
+input,
+textarea{
+	border: 1px solid #C9C9C9;
+	height: 48px;
+	font-family: $base-font-family;
+
+	&:focus{
+		outline: none;
+	}
+}
+
+input{
+	// padding: 0 7px 0 42px;
+}
+
+textarea{
+	padding: 11px 42px;
+}
+
+button{
+	cursor: pointer;
+
+	&:focus{
+		outline: none;
+	}
+}
+
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.bg-beige{
+	background-color: #FFE7D6!important;
+}
+
+.bg-blue{
+	background-color: $dark-blue!important;
+}
+
+.row{
+	&_no-indents{
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+
+
+
